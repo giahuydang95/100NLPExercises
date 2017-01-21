@@ -1,0 +1,9 @@
+sed 's/\t/ /g' < hightemp.txt > newtemp.txt
+
+or 
+
+cat hightemp.txt | tr '\t' ' ' > newtemp.txt
+
+or 
+
+expand hightemp.txt | tr -s ' ' > newtemp.txt
